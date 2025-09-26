@@ -207,8 +207,8 @@ nav ul li a{
 
 /** For mobile devices **/
 @media (max-width: 767px){
-    .body{
-        width: 100%;
+    #home{
+        height: 100%;
     }
     .menubar{
         display: block;
