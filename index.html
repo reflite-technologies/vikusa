@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD78INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav id="navigation">
+        <h1> <img src="images/vikusa.png" alt="" class="badge">
+            vikusa
+        </h1>
+        <ul>
+            <li><a href="#" id="select">Home</a></li>
+            <li><a href="#"id="select">About</a></li>
+            <li><a href="#"id="select">events</a></li>
+            <li><a href="#"id="select">testimonials</a></li>
+            <li><a href="#"id="select">Contacts</a></li>
+        </ul>
+      <div class="menubar" id="menubar">
+        <i class="fa-solid fa-bars" class="toggle"></i>
+      </div>
+    </nav>
+   <section id="home">
+<div class="info">
+    <h3>Welcome to </h3>
+<h1>vihiga county kisii university students association</h1>
+<h2>our core values are: <span class="text"></span></h2>
+<div class="beautify">
+<div class="leaders" id="images"></div>
+<div class="members" id="images"></div>
+</div>
+</div>    
+
+   </section>
+<section id="about">
+    <div class="container">
+        <img src="images/IMG-20250825-WA0087.jpg" alt="">
+        <div>
+            <h3>
+                Networking Opportunities
+            </h3>
+            <p>
+Join a vibrant community that encourages networking and building lasting friendships among peers from similar backgrounds.
+We actively engage in community service initiatives, partnering with local organizations to support various causes that uplift our community and foster goodwill.
+</p>
+        </div>
+    </div>
+ 
+    <div class="container">
+        <img src="images/IMG-20250401-WA0063.jpg" alt="">
+        <div>
+            <h3>
+                Academic support 
+            </h3>
+            <p>
+Access resources and mentorship programs designed to help students excel academically and navigate university life successfully. We are looking fpward to establish scholarship programs aimed at assisting students from vihiga county who face financial hardship,
+ensuring that education remains accessible.
+</p>
+        </div>
+    </div>
+
+       <div class="container">
+        <img src="images/IMG-20250825-WA0086.jpg" alt="">
+        <div>
+            <h3>
+            Social events
+            </h3>
+            <p>
+participate in various social events that promote networking and foster friendships with fellow students. Join us for our annual meetings and other social functions such as hikes and sports tournaments. These events are a great opportunity to connect
+with fellow students and celebrate our diversity.
+</p>
+        </div>
+    </div>
+</section>
+</body>
+<script>
+let selection = document.getElementById('select')
+
+selection.addEventListener('click', function(e){
+    if(selection.classList.contains('.active')){
+        selection.classList.remove('.active')
+    }else{
+        selection.classList.add('.active')
+        selection.style.color = 'yellow'
+    }
+});
+
+    var typed  = new Typed('.text', {
+    strings:['Integrity' , 'Resilience' , 'Teamwork' , 'Unity ','Accountability'
+    ],
+    typeSpeed:100,
+    backSpeed:100,
+    backDelay: 1000,
+    loop: true
+});
+
+let toggle =document.getElementById('menubar')
+let nav = document.getElementById('navigation')
+
+nav.style.height = '40px'
+toggle.addEventListener('click', ()=>{
+    if(nav.style.height == '40px'){
+        nav.style.height = '180px'
+    } else{
+        nav.style.height = '40px'
+    }
+})
+</script>
+</html>
+<style>
+    #about .container{
+        display: flex;
+        justify-content: space-between;
+    }
+   #about .container div{
+    width: 50vw;
+    margin-top: 60px;
+   }
+   #about .container img{
+    height: 50vh;
+    position: relative;
+    margin-top: 60px;
+    margin-left: 20px;
+    align-self: center;
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   @media (max-width: 767px){
+     #about .container img{
+    height: 12px;
+   }
+    #about .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+     #about .container div{
+        width: auto;
+        margin-left: 10px;
+     }
+}
+</style>

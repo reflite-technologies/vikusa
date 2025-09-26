@@ -1,0 +1,253 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+}
+:root{
+    --primary:rgb(8, 207, 8);
+    --secondary: rgb(243, 243, 41);
+    --common: white;
+    --rare: black;
+}
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    justify-content: space-between;
+    height: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 10px var(--rare);
+}
+nav h1{
+    color: var(--common);
+    display: inline-flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+nav h1 img{
+    height: 60px;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--common);
+    text-transform: uppercase;
+}
+
+#home{
+   width: 100%;
+   height: 100vh;
+   position: relative;
+   align-content: center;
+   justify-items: center;
+   background: url(images/1758462356103.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+
+#home .info h1{
+    color: var(--common);
+    text-shadow: 1px 0px 0.5rem black;
+    text-transform: capitalize;
+}
+#home .info h3{
+    font-weight: 600;
+    color: var(--secondary);
+    text-shadow: 0 0 10px var(--rare);
+}
+#home .info h2{
+    text-transform: capitalize;
+    text-shadow: 0 0 10px var(--common);
+}
+.info h2 .text{
+    color: var(--secondary);
+    text-shadow: 0 0 10px black;
+}
+#images{
+    height: 15pc;
+    width: 20pc;
+    box-shadow: 0 0 10px yellow;
+}
+.beautify{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.leaders{
+    background: url(images/JUM_0300.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: animate1 50s infinite normal;
+    animation-delay: 4s;
+}
+
+.members{
+    background: url(images/JUM_0298.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    animation: animate2 50s infinite normal;
+    animation-delay: 4s;
+}
+
+.menubar{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes animate1 {
+    0%{
+        background: url(images/JUM_0300.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(images/IMG-20250401-WA0063.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(images/DSC_4409.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@keyframes animate2 {
+    0%{
+        background: url(images/JUM_0298.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    50%{
+        background: url(images/IMG-20250322-WA0015.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    100%{
+        background: url(images/IMG-20250825-WA0087.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px){
+    nav{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** For mobile devices **/
+@media (max-width: 767px){
+    .body{
+        width: 100%;
+    }
+    .menubar{
+        display: block;
+        margin-top: 10px;
+    }
+    nav{
+        height: 180px;
+        padding: 0;
+        align-items: normal;
+    }
+    nav h1{
+        font-size: 17px;
+        margin-left: 5px;
+    }
+    nav h1 img{
+        height: 30px;
+    }
+      nav ul{
+        position: absolute;
+        top: 30px;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: var(--primary);
+        gap: 0;
+    }
+    nav ul li{
+        padding: 7px;
+    }
+    .info{
+        margin: 20px;
+        margin-top: 90px;
+    }
+    #home{
+        height: max-content;
+    }
+   
+    .members{
+        display: none;
+    }
+} 
