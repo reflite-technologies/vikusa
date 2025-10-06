@@ -3,26 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>VIKUSA</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/vikusa.png">
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD78INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <nav id="navigation">
+   <nav id="navigation">
         <h1> <img src="images/vikusa.png" alt="" class="badge">
             vikusa
         </h1>
-        <ul>
-            <li><a href="#" id="select">Home</a></li>
-            <li><a href="#"id="select">About</a></li>
-            <li><a href="#"id="select">events</a></li>
-            <li><a href="#"id="select">testimonials</a></li>
-            <li><a href="#"id="select">Contacts</a></li>
+         <ul>
+           <li><a href="index.html" id="select">Home</a></li>
+            <li><a href="about.html"id="select">About</a></li>
+            <li><a href="LEADERSHIP.HTML"id="select">Leadership</a></li>
+            <li><a href="gallery.html"id="select">gallery</a></li>
+            <li><a href="#contact"id="select">Contacts</a></li>
         </ul>
-      <div class="menubar" id="menubar">
-        <i class="fa-solid fa-bars" class="toggle"></i>
+
+        <ul id="menulist">
+           <li><a href="index.html" id="select">Home</a></li>
+            <li><a href="about.html"id="select">About</a></li>
+            <li><a href="LEADERSHIP.HTML"id="select">Leadership</a></li>
+            <li><a href="gallery.html"id="select">gallery</a></li>
+            <li><a href="#contacts"id="select">Contacts</a></li>
+        </ul>
+      <div class="menubar1" id="menubar" onclick="toggle()">
+        <i class="fa-solid fa-bars" class="toggle">
+            <img src="images/menu1.png" alt="">
+        </i>
       </div>
+ 
     </nav>
    <section id="home">
 <div class="info">
@@ -70,104 +82,97 @@ ensuring that education remains accessible.
             Social events
             </h3>
             <p>
-participate in various social events that promote networking and foster friendships with fellow students. Join us for our annual meetings and other social functions such as hikes and sports tournaments. These events are a great opportunity to connect
+Participate in various social events that promote networking and foster friendships with fellow students. Join us for our annual meetings and other social functions such as hikes and sports tournaments. These events are a great opportunity to connect
 with fellow students and celebrate our diversity.
 </p>
         </div>
     </div>
 </section>
+
+<section id="events">
+    <h1>our annual events</h1>
+    <h3>Stay informed about our exciting events and activities designed for all members</h3>
+    <div class="storage">
+        <div class="content">
+             <div class="agm">
+
+             </div>
+             <h2>annual general meeting</h2>
+             <p>We hold our annual general meetings in the first semester of every academic year. We dine and might together
+                and enjoy sweet luhya songs from our finest Djs from vihiga county. 
+             </p>
+        </div>
+        <div class="content">
+            <div class="hike">
+
+            </div>
+            <h2>
+                hikes
+            </h2>
+            <p>
+                We oftenly meet for hikes to any part of the country suggested. We tour together and enjoy some of our cultural heritage activities
+                as a team. During the hikes we participate in inter-sub counties football tournaments, hide and seek,races among others.
+            </p>
+        </div>
+        <div class="content">
+            <div class="coffee">
+            </div>
+            <h2>coffee nights</h2>
+            <p>
+                This event happens twice every semester where everyone from Vihiga County in Kisii University get to enjoy a meal together and vibe as a community.
+                During this event we share our experiences in Campus, difficulties and strategies to survive in this new stage of life and independence
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="join">
+<div class="join">
+        <h1>join vikusa today</h1>
+    <h2>Experience the benefits of being part of a thriving community that supports your growth</h2>
+   <div id="data">
+     <div class="data">
+        <img src="images/download.jpeg" alt="">
+            <h3>exclusive resources</h3>
+        <p>
+            Members gain access to exclusive academic resources including study materials and mentorship opportunities
+        </p>
+    </div>
+       <div class="data">
+        <img src="images/images.jpeg" alt="">
+        <h3>social events</h3>
+        <p>Participate in various social events that promote networking and foster friendships with fellow students.</p>
+    </div>
+       <div class="data">
+        <img src="images/DSC_4409.jpg" alt="">
+        <h3>leadership opportunities</h3>
+        <p>Become a leader within the association by taking part in committees and organizing events that benefits our community.</p>
+    </div>
+   </div>
+</div>
+</section>
+
+<section id="member">
+<div class="member" id="person">
+    <h1>Become a Member</h1>
+    <p>Join VIKUSA today and start enjoying the wide array of benefits. Sign up is easy and open to all students from Vihiga county.</p>
+    <div class="input">
+        <input type="text" placeholder="NAME" id="name">
+        <input type="email" placeholder="EMAIL" required>
+        <button id="sub" onclick="verify()">Submit</button>
+    </div>
+   
+</div>
+ <div class="success" id="success">
+    <div>
+        <video src="images/verified.mp4" autoplay loop></video>
+        <h2>You are successfuly registered contact the chair person for more guidance <br><a href="">0111365959</a></h2>
+    </div>
+    </div>
+</section>
+
 </body>
-<script>
-let selection = document.getElementById('select')
-
-selection.addEventListener('click', function(e){
-    if(selection.classList.contains('.active')){
-        selection.classList.remove('.active')
-    }else{
-        selection.classList.add('.active')
-        selection.style.color = 'yellow'
-    }
-});
-
-    var typed  = new Typed('.text', {
-    strings:['Integrity' , 'Resilience' , 'Teamwork' , 'Unity ','Accountability'
-    ],
-    typeSpeed:100,
-    backSpeed:100,
-    backDelay: 1000,
-    loop: true
-});
-
-let toggle =document.getElementById('menubar')
-let nav = document.getElementById('navigation')
-
-nav.style.height = '40px'
-toggle.addEventListener('click', ()=>{
-    if(nav.style.height == '40px'){
-        nav.style.height = '180px'
-    } else{
-        nav.style.height = '40px'
-    }
-})
-</script>
+<script src="index.js"></script>
 </html>
-<style>
-    #about .container{
-        display: flex;
-        justify-content: space-between;
-    }
-   #about .container div{
-    width: 50vw;
-    margin-top: 60px;
-   }
-   #about .container img{
-    height: 50vh;
-    position: relative;
-    margin-top: 60px;
-    margin-left: 20px;
-    align-self: center;
-   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   @media (max-width: 767px){
-     #about .container img{
-    height: 29vh;
-   }
-    #about .container{
-        display: flex;
-        flex-wrap: wrap;
-    }
-     #about .container div{
-        width: auto;
-        margin-left: 10px;
-     }
-}
-</style>

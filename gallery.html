@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIKUSA GALLERY</title>
+    <link rel="shortcut icon" href="images/vikusa.png">
+</head>
+<body>
+
+    <nav id="navigation">
+        <h1> <img src="images/vikusa.png" alt="" class="badge">
+            vikusa
+        </h1>
+         <ul>
+           <li><a href="index.html" id="select">Home</a></li>
+            <li><a href="about.html"id="select">About</a></li>
+            <li><a href="LEADERSHIP.HTML"id="select">Leadership</a></li>
+            <li><a href="gallery.html"id="select">gallery</a></li>
+            <li><a href="#contact"id="select">Contacts</a></li>
+        </ul>
+
+        <ul id="menulist">
+           <li><a href="index.html" id="select">Home</a></li>
+            <li><a href="about.html"id="select">About</a></li>
+            <li><a href="LEADERSHIP.HTML"id="select">Leadership</a></li>
+            <li><a href="gallery.html"id="select">gallery</a></li>
+            <li><a href="#contacts"id="select">Contacts</a></li>
+        </ul>
+      <div class="menubar1" id="menubar" onclick="toggle()">
+        <i class="fa-solid fa-bars" class="toggle">
+            <img src="images/menu1.png" alt="">
+        </i>
+      </div>
+
+    </nav>
+
+    <input type="radio" name="Photos" id="check1" checked>
+    <input type="radio" name="Photos" id="check2">
+    <input type="radio" name="Photos" id="check3">
+    <input type="radio" name="Photos" id="check4">
+    <input type="radio" name="Photos" id="check5">
+
+    <div class="container">
+        <h1>OUR PHOTO GALLERY</h1>
+        <div class="top-content">
+            <h3>Photo Gallery</h3>
+            <label for="check1"> All Photos</label>
+            <label for="check2">Photo Shoot</label>
+            <label for="check3">Hike Photos</label>
+            <label for="check4">Meetings</label>
+            <label for="check5"> Videos</label>
+        </div>
+        <div class="menubar" id="menubar2">
+        <i class="fa-solid fa-bars" class="toggle" onclick="sidebar()">
+            <img src="images/menu.png" alt="">
+        </i>
+      </div>
+        <div class="top-content" id="aside">
+            <h3>Photo Gallery</h3>
+            <label for="check1"> All Photos</label>
+            <label for="check2">Photo Shoot</label>
+            <label for="check3">Hike Photos</label>
+            <label for="check4">Meetings</label>
+            <label for="check5"> Videos</label>
+        </div>
+
+<script src="index.js"></script>
+<script>
+ let asidegal = document.getElementById('aside');
+asidegal.style.display = 'none';
+
+function sidebar(){
+    if(asidegal.style.display == 'none'){
+        asidegal.style.display = 'flex'
+    }else{
+        asidegal.style.display = 'none'
+    }
+};
+</script>
+
+        <div class="photo-gallery">
+            <div class="pic hike">
+                <img src="images/HIKE1.jpeg" alt="" controls>
+            </div>
+
+            <div class="pic shoot">
+                <img src="images/DSC_4409.jpg" alt="">
+            </div>
+
+            <div class="pic meetings">
+                <img src="images/WhatsApp Image 2025-10-06 at 8.42.40 AM (1).jpeg" alt="">
+            </div>
+
+            <div class="pic meetings">
+                <img src="images/IMG-20250401-WA0063.jpg" alt="">
+            </div>
+
+            <div class="pic videos">
+                <video src="images/HIKE10.mp4" controls></video>
+            </div>
+
+            <div class="pic meetings">
+                <img src="images/WhatsApp Image 2025-10-06 at 8.42.40 AM.jpeg" alt="">
+            </div>
+            
+            <div class="pic hike">
+                <img src="images/HIKE1.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0081.jpg" alt="">
+            </div>
+
+            <div class="pic meetings">
+                <img src="images/WhatsApp Image 2025-10-06 at 8.42.41 AM.jpeg" alt="">
+            </div>
+              <div class="pic videos">
+                <video src="images/HIKE11.mp4" controls ></video>
+            </div>
+
+
+            <div class="pic hike">
+                <img src="images/HIKE2.jpeg" alt="">
+            </div>
+           
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0100.jpg" alt="">
+            </div>
+
+            <div class="pic meetings">
+                <img src="images/WhatsApp Image 2025-10-06 at 8.42.44 AM.jpeg" alt="">
+            </div>
+              <div class="pic videos">
+                <video src="images/HIKE9.mp4" controls></video>
+            </div>
+
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE3.jpeg" alt="">
+            </div>
+            
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0112.jpg" alt="">
+            </div>
+            <div class="pic meetings">
+                <img src="images/WhatsApp Image 2025-10-06 at 8.42.42 AM.jpeg" alt="">
+            </div>
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE4.jpeg" alt="">
+            </div>
+            
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0121.jpg" alt="">
+            </div>
+
+
+            <div class="pic hike">
+                <img src="images/HIKE5.jpeg" alt="">
+            </div>
+          
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0123.jpg" alt="">
+            </div>
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE6.jpeg" alt="">
+            </div>
+           
+             <div class="pic meetings">
+                <img src="images/IMG-20250325-WA0024.jpg" alt="">
+            </div>
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE7.jpeg" alt="">
+            </div>
+            <div class="pic shoot">
+                <img src="images/IMG-20250825-WA0087.jpg" alt="">
+            </div>
+            
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE8.jpeg" alt="">
+            </div>
+            <div class="pic shoot">
+                <img src="images/JUM_0298.jpg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250325-WA0038.jpg" alt="">
+            </div>
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE12.jpeg" alt="">
+            </div>
+            <div class="pic shoot">
+                <img src="images/JUM_0300.jpg" alt="">
+            </div>
+             
+
+
+
+            <div class="pic hike">
+                <img src="images/HIKE13.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250401-WA0063.jpg" alt="">
+            </div>
+
+
+            <div class="pic hike">
+                <img src="images/HIKE14.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250401-WA0064.jpg" alt="">
+            </div>
+
+            <div class="pic hike">
+                <img src="images/HIKE15.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250401-WA0069.jpg" alt="">
+             </div>
+
+            <div class="pic hike">
+                <img src="images/HIKE16.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250825-WA0086.jpg" alt="">
+            </div>
+            
+            <div class="pic hike">
+                <img src="images/HIKE17.jpeg" alt="">
+            </div>
+             <div class="pic meetings">
+                <img src="images/IMG-20250826-WA0003.jpg" alt="">
+            </div>
+
+          
+
+             <div class="pic meetings">
+                <img src="images/IMG-20250829-WA0028.jpg" alt="">
+            </div>
+
+             <div class="pic meetings">
+                <img src="images/photo (2).jpg" alt="">
+            </div>
+
+             <div class="pic meetings">
+                <img src="images/IMG-20250308-WA0058.jpg" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>
+
+<style>
+
+        body{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    #menubar2{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    .container{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-weight: normal;
+        font-size: 35px;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    .top-content{
+        background-color: rgb(202, 197, 197);
+        width: 90%;
+        margin: 0 auto 20px auto;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px lightgray;
+    }
+    h3{
+        height: 100%;
+        background-color: oklab(90.67% 0 -0.0001);
+        line-height: 60px;
+        padding: 0 50px;
+        color: white;
+    }
+    label{
+        display: inline-block;
+        height: 100%;
+        margin: 0 20px;
+        line-height: 60px;
+        font-size: 18px;
+        color: gray;
+        cursor: pointer;
+        transition: color .5s;
+    }
+    label:hover{
+        color: black;
+    }
+    .photo-gallery{
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .pic{
+        position: relative;
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+        border-radius: 10px;
+        box-shadow: 3px 3px 5px lightgray;
+    }
+    .pic img, video{
+        height:90%;
+        width: 100%;
+        transition: .5s;
+    }
+    .videos::after, .videos::before{
+        display: none;
+    }
+    .pic::before{
+        content: 'VIKUSA';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        width: 100%;
+        margin-top: -100%;
+        opacity: 0;
+        transition: .3s;
+        transition-delay: .2s;
+        z-index: 1;
+    }
+    .pic::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        border-radius: 10px;
+        height: 0;
+        background-color: rgba(0, 0, 0, .4);
+        transition: .3s;
+    }
+    .pic:hover::after{
+        height: 100%;
+    }
+    .pic:hover::before{
+        margin-top: 0;
+        opacity: 1;
+    }
+    #check1:checked ~ .container .photo-gallery .pic{
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+    }
+    #check2:checked ~ .container .photo-gallery .shoot{
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+    }
+     #check2:checked ~ .container .photo-gallery .hike,  #check2:checked ~ .container .photo-gallery .meetings,  #check2:checked ~ .container .photo-gallery .videos{
+        display: none;
+     }
+
+
+     #check3:checked ~ .container .photo-gallery .shoot{
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+    }
+     #check3:checked ~ .container .photo-gallery .shoot,  #check3:checked ~ .container .photo-gallery .meetings,  #check3:checked ~ .container .photo-gallery .videos{
+        display: none;
+     }
+      
+        #check4:checked ~ .container .photo-gallery .meetings{
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+    }
+     #check4:checked ~ .container .photo-gallery .shoot,  #check4:checked ~ .container .photo-gallery .hike,  #check4:checked ~ .container .photo-gallery .videos{
+        display: none;
+     }
+
+    #check5:checked ~ .container .photo-gallery .videos{
+        opacity: 1;
+        transform: scale(1);
+        position: relative;
+    }
+     #check5:checked ~ .container .photo-gallery .shoot,  #check5:checked ~ .container .photo-gallery .hike,  #check5:checked ~ .container .photo-gallery .meetings{
+        display: none;
+     }
+
+:root{
+    --primary:rgb(8, 207, 8);
+    --secondary: rgb(243, 243, 41);
+    --common: white;
+    --rare: black;
+}
+
+   :root{
+    --primary:rgb(8, 207, 8);
+    --secondary: rgb(243, 243, 41);
+    --common: white;
+    --rare: black;
+}
+nav{
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary);
+    justify-content: space-between;
+    height: 30px;
+    padding: 20px;
+    box-shadow: 0 10px 10px var(--rare);
+}
+nav h1{
+    color: var(--common);
+    display: inline-flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+nav h1 img{
+    height: 60px;
+    border-radius: 50%;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+nav ul li{
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--common);
+    text-transform: uppercase;
+}
+nav #menulist{
+    display: none;
+}
+.menubar1{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-self: left;
+    padding: 5px;
+    display: none;
+}
+.menubar1 img{
+    height: 25px;
+}
+#aside{
+    display: flex;
+    flex-direction: column;
+    width: 20pc;
+    height: 100%;
+}
+.menubar{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    justify-self: left;
+    padding: 5px;
+}
+.menubar img{
+    height: 25px;
+}
+
+
+
+     /** For mobile devices **/
+
+@media (max-width: 767px){
+    .top-content{
+    display: none;
+}
+.menubar{
+    display: flex;
+}
+  .pic{
+    height: 180px;
+  }
+    .menubar1{
+        display: block;
+    }
+     nav ul{
+        display: none;
+     }
+       .menubar{
+        display: block;
+        margin-top: 10px;
+    }
+    nav{
+        height: fit-content;
+        padding: 0;
+        align-items: normal;
+    }
+    nav h1{
+        font-size: 17px;
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    nav h1 img{
+        height: 30px;
+    }
+     nav ul{
+        display: none;
+     }
+    nav ul li{
+        padding: 7px;
+    }
+    nav #menulist{
+        display: block;
+    }
+    nav #menulist li{
+        padding-top: 20px;
+        margin-bottom: 20px;
+        
+    }
+    nav .menubar1{
+        display: block;
+    }
+    .photo-gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .pic::after:focus{
+       height: 200px;
+    }
+    #menubar2{
+        display: block;
+    }
+}
+</style>
